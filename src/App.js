@@ -3,6 +3,7 @@ import React, { useState } from "react";
 
 function App() {
   const [squares, setSquares] = useState(utils.range(1, 25));
+
   return (
     <>
       <div className="grid justify-center w-full h-screen">
@@ -12,7 +13,7 @@ function App() {
             return (
               <div
                 key={square}
-                className="bg-current hover:bg-current-50 w-12 h-12 "
+                className="bg-current hover:bg-[#6f7d7e] w-12 h-12 "
               ></div>
             );
           })}
